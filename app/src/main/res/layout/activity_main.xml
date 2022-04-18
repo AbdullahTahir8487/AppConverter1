@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="253dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="112dp"
+        android:text="Weight Converter "
+        android:textColor="#911E1E"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtweight" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="286dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtweight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/cKgtolbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kilos to pounds" />
+
+        <RadioButton
+            android:id="@+id/clbstoKG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pounds to kg" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:hint="enter weight"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/converter" />
+
+    <Button
+        android:id="@+id/converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="49dp"
+        android:text="Convert"
+        app:layout_constraintBottom_toTopOf="@+id/txtweight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
